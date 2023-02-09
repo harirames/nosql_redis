@@ -1,0 +1,77 @@
+Creating users
+
+127.0.0.1:6379> rpush user1 hari 20itr025 20it6a 7010950411 it
+(integer) 5
+127.0.0.1:6379> rpush user2 indrajith 20itr030 20it6a 6352415241 it
+(integer) 5
+127.0.0.1:6379> rpush user3 ravi 20itr220 20it6a 9325155211 it
+(integer) 5
+127.0.0.1:6379> rpush user4 raj 20itr180 20it6a 8541252141 it
+(integer) 5
+127.0.0.1:6379> rpush user6 ramesh 20csr132 20cs6a 96551236521 cse
+(integer) 5
+127.0.0.1:6379> rpush user7 ram 20itr132 20it6a 87451236521 it
+(integer) 5
+127.0.0.1:6379> rpush user8 chandru 20itr010 20itr6a 8745214512 it
+(integer) 5
+127.0.0.1:6379> rpush user9 chandru 20itr010 20itr6a 8745214512 it
+(integer) 5
+127.0.0.1:6379> rpush user10 bala 20csr009 20cs6a 741852963 cse
+(integer) 5
+  
+viewing users
+
+127.0.0.1:6379> lrange user1 0 -1
+1) "hari"
+2) "20itr025"
+3) "20it6a"
+4) "7010950411"
+5) "it"
+127.0.0.1:6379> lrange user2 0 -1
+1) "indrajith"
+2) "20itr030"
+3) "20it6a"
+4) "6352415241"
+5) "it"
+127.0.0.1:6379> lrange user3 0 -1
+1) "ravi"
+2) "20itr220"
+3) "20it6a"
+4) "9325155211"
+5) "it"
+127.0.0.1:6379> lrange user4 0 -1
+1) "raj"
+2) "20itr180"
+3) "20it6a"
+4) "8541252141"
+5) "it"
+127.0.0.1:6379> lrange user6 0 -1
+1) "ramesh"
+2) "20csr132"
+3) "20cs6a"
+4) "96551236521"
+5) "cse"
+127.0.0.1:6379> lrange user7 0 -1
+1) "ram"
+2) "20itr132"
+3) "20it6a"
+4) "87451236521"
+5) "it"
+127.0.0.1:6379> lrange user8 0 -1
+1) "chandru"
+2) "20itr010"
+3) "20itr6a"
+4) "8745214512"
+5) "it"
+127.0.0.1:6379> lrange user9 0 -1
+1) "chandru"
+2) "20itr010"
+3) "20itr6a"
+4) "8745214512"
+5) "it"
+127.0.0.1:6379> lrange user10 0 -1
+1) "bala"
+2) "20csr009"
+3) "20cs6a"
+4) "741852963"
+5) "cse"
